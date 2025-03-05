@@ -21,14 +21,15 @@ while True:
         file_list.append(input("Please enter the name of the book:")+"\n")
 
     if response == "Remove":
-        file_list.remove(input("Please enter the name of the book:"))
+        file_list.remove(input("Please enter the name of the book:")+"\n")
 
-    if response == "Exit":
-        file = open('database.txt', 'a')
+    if response == "Save":
+        file = open('database.txt', 'w')
         for item in file_list:
             file.write(item)
-        break
 
+    if response == "Exit":
+        break
 
 
 
