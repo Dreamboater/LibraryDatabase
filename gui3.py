@@ -3,9 +3,10 @@ from tkinter import ttk
 
 # root window
 root = tk.Tk()
-root.geometry("600x400")
+root.geometry("300x400")
+root.resizable(True,True)
 root.title('Library Database')
-root.resizable(0, 0)
+root.resizable(1, 1)
 root.iconbitmap("myIcon.ico")
 
 # configure the grid
